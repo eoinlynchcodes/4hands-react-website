@@ -1,0 +1,38 @@
+.rightContainer{
+    border: 1px solid black;
+    width: 100%;
+}
+
+.rightBlackSegment{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-content: flex-start;
+    padding: .5rem;
+}
+
+
+
+.rightWhiteSegment{
+
+}
+
+.inlineParagraph{
+    display: flex ;
+    background-color: blueviolet;
+    padding: 1rem;
+}
+
+.divWithRoseAndMargaux{
+    display: flex;
+}
+
+.margauxOrRoseDiv{
+    margin: .5rem;
+    border: 1px solid black;
+}
+
+.margauxOrRoseDiv img {
+width: 100%;
+}
+

@@ -1,0 +1,40 @@
+.leftContainer{
+    background-color: blue;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.leftContainer img{
+    width: 100%;
+}
+
+.blackSegment{
+    background-color: black;
+    color: white;
+}
+
+.blackSegment h3{
+    display: flex;
+    padding: .5rem;
+    align-content: flex-start;
+}
+
+
+.whiteSegment{
+    background-color: green;
+    padding: 1rem;
+}
+
+
+.productDiv{
+    width: 30%;
+    margin: 0 auto;
+    background-color: gray;
+    border: 1px solid black;
+    padding: .5rem;
+}
+
+.productsSection{
+    display: flex;
+    flex-wrap: wrap;
+}
