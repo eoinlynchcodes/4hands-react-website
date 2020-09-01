@@ -38,3 +38,11 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.emailSignUpForm{
+    display: flex;
+    padding: 3rem;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}

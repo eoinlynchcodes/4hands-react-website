@@ -1,8 +1,27 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "../css-files/LeftContainer.css";
 import kimchi from "../images/kimchi";
+import axios from 'axios';
 
 function LeftContainer() {  
+
+
+  const[ formData, setFormData ] = useState("");
+
+  const handleChange = event => {
+    setFormData(event.target.value);
+  }
+
+  const handleSubmit = event => {
+    event.preventDefault();
+    axios.post('https://gmail.us19.list-manage.com/subscribe/post?u=5f345ee5b52850316f8e104b4&amp;id=e9b9605d2b', formData)
+    .then(response => {
+      console.log(response);
+    })
+    .catch(error => {
+      console.log(error);
+    })
+  }
 
   return (
     <div>
@@ -109,7 +128,6 @@ function LeftContainer() {
           <h3>Blog</h3>
         </div>
         <div className="whiteSegment">
-          <p>Blog goes here</p>
           <div class="w3-justify" id="retainable-rss-embed" data-rss="https://medium.com/feed/@4handsf"
             data-maxcols="3" data-layout="grid" data-poststyle="inline" data-readmore="Read the rest..."
             data-buttonclass="btn btn-primary" data-offset="-100">
@@ -117,10 +135,18 @@ function LeftContainer() {
         </div>
       </div>
 
-      <div>
-      <p>Bring in the Newsletter Subscription here...</p>
+      <div className="leftContainer">
+        <form onSubmit={() => handleSubmit()} className="emailSignUpForm">
+          <h3>Subscribe to our Newsletter</h3>
+          <input 
+          type="email"
+          onChange={event => handleChange(event)}
+          placeholder="your@email.com..." 
+          require
+          />
+          <button>Submit</button>
+        </form>
       </div>
-
     </div>
   );
 }
