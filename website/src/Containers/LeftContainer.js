@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "../css-files/LeftContainer.css";
 import kimchi from "../images/kimchi";
+import kombucha from '../images/kombucha';
 import axios from 'axios';
+import MenuContainer from './MenuCaller';
 
 function LeftContainer() {  
 
@@ -30,26 +32,18 @@ function LeftContainer() {
           <h3>Products</h3>
         </section>
 
-        {/* <img src={kimchi} /> */}
-        <p>
-          <i>
-            "To live in a world where nature comes first, where we as humans see
-            ourselves of part of nature, not above it. To see all peoples open
-            to receive the goodness our natural surroundings have to offer,
-            showing respect and gratitude for how lucky we are to live in a
-            world which knows better how to care for itself than we ever could."
-          </i>
-        </p>
+        {/* Image can go here with text? */}
 
         <section className="productsSection">
           <div className="productDiv">
             <div className="blackSegment">
-              <h3>Kimchi</h3>
+              <h3>Kombucha</h3>
             </div>
-            <img src={kimchi} alt=""/>
+            <img src={kombucha} alt=""/>
             <div className="whiteSegment">
-              <p>Text about Kombucha.</p>
-            </div>
+            <button>Curious?</button>
+              <button>Add to Basket</button>            
+              </div>
           </div>
 
           <div className="productDiv">
@@ -58,7 +52,8 @@ function LeftContainer() {
             </div>
             <img src={kimchi} alt="" />
             <div className="whiteSegment">
-              <p>Text about Kimchi.</p>
+              <button>Curious?</button>
+              <button>Add to Basket</button>
             </div>
           </div>
 
@@ -68,7 +63,8 @@ function LeftContainer() {
             </div>
             <img src={kimchi} alt=""/>
             <div className="whiteSegment">
-              <p>Text about Kimchi.</p>
+              <button>Curious?</button>
+              <button>Add to Basket</button>
             </div>
           </div>
 
@@ -78,7 +74,8 @@ function LeftContainer() {
             </div>
             <img src={kimchi} alt=""/>
             <div className="whiteSegment">
-              <p>Text about Kimchi.</p>
+              <button>Curious?</button>
+              <button>Add to Basket</button>
             </div>
           </div>
           <div className="productDiv">
@@ -87,7 +84,8 @@ function LeftContainer() {
             </div>
             <img src={kimchi} alt=""/>
             <div className="whiteSegment">
-              <p>Text about Kimchi.</p>
+              <button>Curious?</button>
+              <button>Add to Basket</button>
             </div>
           </div>
         </section>
@@ -118,8 +116,7 @@ function LeftContainer() {
           <h3>Takeaways</h3>
         </div>
         <div className="whiteSegment">
-          <p>White Segment</p>
-          <p>Menu goes here.</p>
+          <MenuContainer/>
         </div>
       </div>
 
@@ -128,9 +125,9 @@ function LeftContainer() {
           <h3>Blog</h3>
         </div>
         <div className="whiteSegment">
-          <div class="w3-justify" id="retainable-rss-embed" data-rss="https://medium.com/feed/@4handsf"
+          <div className="w3-justify" id="retainable-rss-embed" data-rss="https://medium.com/feed/@4handsf"
             data-maxcols="3" data-layout="grid" data-poststyle="inline" data-readmore="Read the rest..."
-            data-buttonclass="btn btn-primary" data-offset="-100">
+            data-button="btn btn-primary" data-offset="-100">
           </div>
         </div>
       </div>
@@ -142,7 +139,6 @@ function LeftContainer() {
           type="email"
           onChange={event => handleChange(event)}
           placeholder="your@email.com..." 
-          require
           />
           <button>Submit</button>
         </form>

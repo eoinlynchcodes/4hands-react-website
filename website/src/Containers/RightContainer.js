@@ -53,43 +53,47 @@ function RightContainer() {
           </div>
 
           <ul>
-            <li>1. Make the best product possible.</li> <hr />
-            <li>
-              2. Always strive to improve and innovate on every level.
-            </li>{" "}
+            <li>Make the best product possible.</li> <hr />
+            <li>Always strive to improve and innovate on every level.
+            </li>
             <hr />
-            <li>3. Nutrition is key.</li> <hr />
-            <li>
-              4. Connect with suppliers, continually control and monitor supply
+            <li>Nutrition is key.</li> 
+            <hr />
+            <li>Connect with suppliers, continually control and monitor supply
               chain.
-            </li>{" "}
+            </li>
             <hr />
-            <li>
-              5. Minimize the creation of waste.
-            </li>{" "}
+            <li>Minimize the creation of waste.
+            </li>
             <hr />
-            <li>
-              6. Assess the environmental outcome of any business decision
+            <li>Assess the environmental outcome of any business decision
               before making it.
-            </li>{" "}
+            </li>
             <hr />
-            <li>
-              7. Support and promote farmers that fit principles.
-            </li>{" "}
+            <li>Support and promote farmers that fit principles.
+            </li>
             <hr />
-            <li>
-              8. Engage with and teach food citizens (customers).
-            </li><hr />
-            <li>
-              9. Continually push for the collective good, to give better access
+            <li>Engage with and teach food citizens (customers).
+            </li>
+            <hr />
+            <li>Continually push for the collective good giving better access
               to sustainable food to a maximum of people, while supporting
               biodiversity and regenerative agriculture.
-            </li><hr />
-            <li>10. Lead by example.</li>
+            </li>
+            
+            <hr />
+            <li>Lead by example.</li>
           </ul>
         </div>
       </div>
-      <h1>RightContainer</h1>
+      <div className="rightContainer">
+        <div className="rightBlackSegment">
+          <h3>Gallery</h3>
+          <div className="imageModal">
+            
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

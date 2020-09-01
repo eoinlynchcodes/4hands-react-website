@@ -4,6 +4,7 @@ import Navigation from './components/Navigation';
 import RightPanel from './components/RightPanel';
 import LeftPanel from './components/LeftPanel';
 import Footer from './components/Footer';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <RightPanel/>
       </div>
       <Footer/>
+
 
     </div>
   );

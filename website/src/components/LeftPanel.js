@@ -6,7 +6,6 @@ function LeftPanel(){
 
     return (
         <div className="leftPanel">
-            <h1>LeftPanel</h1>
             <LeftContainer/>
         </div>
     )

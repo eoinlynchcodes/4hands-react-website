@@ -6,7 +6,6 @@ function RightPanel(){
 
     return (
         <div className="rightPanel">
-            <h1>RightPanel</h1>
             <RightContainer/>
         </div>
     )
