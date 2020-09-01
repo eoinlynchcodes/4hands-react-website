@@ -11,8 +11,6 @@
     padding: .5rem;
 }
 
-
-
 .rightWhiteSegment{
 
 }
@@ -36,3 +34,15 @@
 width: 100%;
 }
 
+ul{
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+ul li{
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
+
+}
