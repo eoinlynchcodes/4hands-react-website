@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../css-files/LeftContainer.css";
 import kimchi from "../images/kimchi";
 
-function LeftContainer() {
+function LeftContainer() {  
+
   return (
     <div>
       <div className="leftContainer">
@@ -75,7 +76,7 @@ function LeftContainer() {
 
       <div className="leftContainer">
         <div className="blackSegment">
-          <h3>Vision</h3>
+          <h3 className="blackSegment">Vision</h3>
         </div>
         <div className="whiteSegment">
           <p>
@@ -109,6 +110,10 @@ function LeftContainer() {
         </div>
         <div className="whiteSegment">
           <p>Blog goes here</p>
+          <div class="w3-justify" id="retainable-rss-embed" data-rss="https://medium.com/feed/@4handsf"
+            data-maxcols="3" data-layout="grid" data-poststyle="inline" data-readmore="Read the rest..."
+            data-buttonclass="btn btn-primary" data-offset="-100">
+          </div>
         </div>
       </div>
 
