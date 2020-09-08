@@ -7,7 +7,7 @@ function MenuCaller(){
     const [ menuCall, setMenuCall ] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:3300/menu/')
+        axios.get('https://four-hands-food-studio-node-js.herokuapp.com/menu')
         .then(response => {
             setMenuCall(response.data);
         })
@@ -18,12 +18,13 @@ function MenuCaller(){
 
     return (
         <div>
-            {
+            {/* {
                 menuCall.map((data, key) => {
                     console.log(data);
                     return <MenuContainer props={data} />
                 })
-            }
+            } */}
+            <MenuContainer/>
         </div>
     )
 }

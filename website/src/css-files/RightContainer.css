@@ -11,15 +11,6 @@
     padding: .5rem;
 }
 
-.rightWhiteSegment{
-
-}
-
-.inlineParagraph{
-    display: flex ;
-    background-color: blueviolet;
-    padding: 1rem;
-}
 
 .divWithRoseAndMargaux{
     display: flex;

@@ -2,10 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -26,6 +22,7 @@
 
 .App-link {
   color: #61dafb;
+  font-family: 'Work Sans', sans-serif;
 }
 
 @keyframes App-logo-spin {
@@ -38,11 +35,19 @@
 }
 
 .container{
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
 }
 
 .leftPanel{
-  background-color: #61dafb;
+  /* border: 1px solid black; */
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    }
 }

@@ -1,8 +1,14 @@
 .leftContainer{
-    background-color: blue;
-    width: 95%;
+    width: 80%;
     margin: 0 auto;
+    border: 1px solid black;
 }
+
+@media only screen and (max-width: 600px) {
+    .leftContainer {
+      width: 90%;
+    }
+  }
 
 .leftContainer img{
     width: 100%;
@@ -11,6 +17,9 @@
 .blackSegment{
     background-color: black;
     color: white;
+    display: flex;
+    align-content: flex-start;
+    padding: .5rem;
 }
 
 .blackSegment h3{
@@ -21,22 +30,27 @@
 
 
 .whiteSegment{
-    background-color: green;
-    padding: 1rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 
 .productDiv{
-    width: 30%;
-    margin: 0 auto;
-    background-color: gray;
+    width: 50%;
+    margin: 1rem 0rem;
     border: 1px solid black;
-    padding: .5rem;
+}
+
+.productDiv button{
+    width: 50%;
 }
 
 .productsSection{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .emailSignUpForm{
@@ -45,4 +59,74 @@
     flex-direction: column;
     width: 80%;
     margin: 0 auto;
+}
+
+.aboutText{
+    padding: 4rem;
+}
+
+.principles{
+    border: 1px solid black;
+}
+
+#retainable-rss-embed{
+}
+
+.visionText{
+    padding: 2rem 2rem;
+}
+
+.space{
+    margin: 2rem auto;
+}
+
+button{
+    padding: 1rem;
+    margin: .5rem .5rem;
+    border-radius: 12px;
+}
+
+.curiousButton{
+    background-color: rgb(0, 112, 186);
+    color: white;
+
+}
+
+.addButton{
+    background-color: #f44336;
+    color: white;
+}
+.orderButton{
+    background-color: rgb(0, 112, 186);
+    color: white;
+    border-radius: 24px;
+}
+
+.formAndButton{
+    display: flex;
+    margin: 0 auto;
+}
+
+.aboutRoseAndMargaux{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutRoseAndMargaux p{
+    padding: 2.5rem;
+}
+
+.aboutRoseAndMargaux img{
+    padding: 1rem;
+}
+
+.takeawayDiv{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.productText{
+    padding: 0rem 2rem;
 }
