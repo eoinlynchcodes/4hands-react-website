@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '../css-files/Nav.css';
+import { CartContext } from '../contexts/CartContext';
 
 function Navigation(){
+
+  const cart = useContext(CartContext);
 
     return (
         <div className="topnav" id="myTopnav">
@@ -13,6 +16,7 @@ function Navigation(){
         {/* <a href="javascript:void(0);" classNameName="icon" onClick={resizeNav()}>
           <i className="fa fa-bars"></i>
         </a> */}
+        <span>{cart.length}</span>
       </div>
     )
 }

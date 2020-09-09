@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useHistory } from 'react-router-dom'
+// import { useHistory } from 'react-router-dom'
 import "../css-files/LeftContainer.css";
 import { Button } from "@material-ui/core";
 import kimchi from "../images/kimchi";
@@ -30,7 +30,7 @@ function LeftContainer() {
         formData
       )
       .then((response) => {
-        history.push("https://gmail.us19.list-manage.com/subscribe/post?u=5f345ee5b52850316f8e104b4&amp;id=e9b9605d2b");
+        // history.push("https://gmail.us19.list-manage.com/subscribe/post?u=5f345ee5b52850316f8e104b4&amp;id=e9b9605d2b");
       })
       .catch((error) => {
         console.log(error);
