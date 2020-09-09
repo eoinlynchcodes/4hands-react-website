@@ -1,8 +1,0 @@
-.rightPanel{
-    width: 33%;
-}
-@media only screen and (max-width: 600px) {
-    .rightPanel {
-      width: 100%;
-    }
-  }
