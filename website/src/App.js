@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Route } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
-import { useHistory } from "react-router-dom";
 
 // CSS
 import "./App.css";
@@ -14,6 +13,8 @@ import About from "./components/About";
 import Products from "./components/Products";
 import MenuContainer from "./Containers/MenuContainer";
 import Product from "./components/Product";
+import ShoppingCart from "./components/ShoppingCart";
+import Item from './components/ShoppingCartItem';
 
 // Data
 import data from "./data/products";
@@ -22,18 +23,15 @@ import data from "./data/products";
 import { ProductContext } from "./contexts/ProductContext";
 import { CartContext } from "./contexts/CartContext";
 import MoreOnProduct from "./components/MoreOnProduct";
-import ShoppingBasket from "./components/ShoppingBasket";
+
 
 function App() {
   const [products] = useState(data);
   const [cart, setCart] = useState([]);
   const [itemToSee, setItemToSee] = useState([]);
 
-  const history = useHistory();
-
   const seeItem = (item) => {
     setItemToSee([...itemToSee, item]);
-    history.push("/curious");
   };
 
   const addItem = (item) => {
@@ -44,21 +42,25 @@ function App() {
     <div className="App">
       <ProductContext.Provider value={{ products, addItem, seeItem }}>
         <CartContext.Provider value={cart}>
-          <Route exact path="/">
-            <Navigation />
-            <About />
-            <Products />
-          </Route>
+          
+          <Route exact path="/" component={Navigation} />
+          <Route exact path="/" component={About} />
+          <Route exact path="/"
+            render={() => <Products products={products} addItem={addItem} seeItem={seeItem} />}
+          />
 
-          <Route exact path="/curious">
-            <Navigation/>
-            <MoreOnProduct/>
-          </Route>
+          <Route exact path="/curious" component={Navigation} />
+          <Route exact path="/curious" component={MoreOnProduct} />
 
-        <Route exact path="/cart">
-        <Navigation /> 
-        <ShoppingBasket/> 
-        </Route>
+          <Route 
+          exact path="/cart"
+            render={() => <ShoppingCart cart={cart} />}
+            component={Navigation} />
+          <Route 
+          exact path="/cart"
+            render={() => <ShoppingCart cart={cart} />}
+            component={ShoppingCart} />
+
         </CartContext.Provider>
       </ProductContext.Provider>
       <Footer />

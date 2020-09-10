@@ -1,14 +1,15 @@
 import React from "react";
 
-const ShoppingBasketItem = (props) => {
+const Item = props => {
+  console.log(props);
   return (
     <div>
       <div>
-        <h1>{props.title}</h1>
+        <p>{props.name}</p>
         <button>Remove from cart</button>
       </div>
     </div>
   );
 };
 
-export default ShoppingBasketItem;
+export default Item;
