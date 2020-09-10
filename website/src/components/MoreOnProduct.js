@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Navigation from '../components/Navigation';
 import MoreContainer from '../components/MoreContainer';
 import { ProductContext } from '../contexts/ProductContext';

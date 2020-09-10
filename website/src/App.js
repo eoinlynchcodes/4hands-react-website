@@ -22,6 +22,7 @@ import data from "./data/products";
 import { ProductContext } from "./contexts/ProductContext";
 import { CartContext } from "./contexts/CartContext";
 import MoreOnProduct from "./components/MoreOnProduct";
+import ShoppingBasket from "./components/ShoppingBasket";
 
 function App() {
   const [products] = useState(data);
@@ -31,7 +32,6 @@ function App() {
   const history = useHistory();
 
   const seeItem = (item) => {
-    debugger;
     setItemToSee([...itemToSee, item]);
     history.push("/curious");
   };
@@ -54,6 +54,11 @@ function App() {
             <Navigation/>
             <MoreOnProduct/>
           </Route>
+
+        <Route exact path="/cart">
+        <Navigation /> 
+        <ShoppingBasket/> 
+        </Route>
         </CartContext.Provider>
       </ProductContext.Provider>
       <Footer />

@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import '../css-files/Nav.css';
+import { NavLink } from 'react-router-dom';
 import { CartContext } from '../contexts/CartContext';
 
 function Navigation(){
@@ -16,7 +17,10 @@ function Navigation(){
         {/* <a href="javascript:void(0);" classNameName="icon" onClick={resizeNav()}>
           <i className="fa fa-bars"></i>
         </a> */}
+        <NavLink to="/cart">
         <span>{cart.length}</span>
+
+        </NavLink>
       </div>
     )
 }
