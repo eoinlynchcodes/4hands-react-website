@@ -9,13 +9,15 @@ const ShoppingCart = () => {
 	const cart = useContext(CartContext);
 	console.log(cart);
 
-	const getCartTotal = () => {
-		return cart.reduce((acc, value) => {
-			// return acc + value.price;
-			console.log('acc' + acc);
-			console.log('value' + value);
-		}, 0)
-		// .toFixed(2);
+	const getCartTotal = (cart) => {		
+		let cartTotal = 0;
+		for (var i = 0; i < cart.length; i++){
+			cartTotal += cart[i].price;
+			console.log(cart[i].price);
+			console.log(cartTotal);
+		}
+		console.log('final total' + cartTotal);
+		return cartTotal;
 	};
 	
 	return (
@@ -24,7 +26,7 @@ const ShoppingCart = () => {
 				<Item key={item.id} {...item} />
 			))}
 			<div className="shopping-cart__checkout">
-				<p>Total: ${getCartTotal()}</p>
+				<p>Total: ${getCartTotal(cart)}</p>
 				<button>Checkout</button>
 			</div>
 		</div>

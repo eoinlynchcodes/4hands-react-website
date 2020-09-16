@@ -3,8 +3,6 @@ import "../css-files/product.css";
 import { useHistory } from 'react-router-dom';
 
 const Product = (props) => {
-  console.log(props);
-
 
   return (
     <div className="product">

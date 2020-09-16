@@ -20,7 +20,7 @@ export default [
     ingredients: [ 'White Cabbage - Larkins Hill Farm, Tipperary', 'Bramley Apples - 4 Hands Farm', 'Onions - Larkins Hill Farm, Tipperary', 'Turmeric Root- Peru', 'Salt - Guerande, North West France'],
     size: '200ml',
     other: 'Fermented for 6 months',
-    price: '€4.00',
+    price: 4.00,
     image: whitekraut
 },
 {
@@ -30,7 +30,7 @@ export default [
     ingredients: ['Red Cabbage - Larkins Hill Farm, Tipperary', 'Bramley Apples - 4 Hands Farm', 'Onions - Larkins Hill Farm, Tipperary', 'Salt - Guerande, North West France'],
     size: '200ml',
     other: 'Fermented for 6 months',
-    price: '€4.00',
+    price: 4.00,
     image: redkraut
 },
 {
@@ -40,7 +40,7 @@ export default [
     ingredients: ['Carrots - Nurney Farm, Kildare / Larkins Hill, Tipperary', 'Salt - Guerande, North West France'],
     size: '250ml glass bottle',
     other: 'Fermented for 12 months +',
-    price: '€7.00',
+    price: 7.00,
     image: ''
 },
 {
@@ -49,7 +49,7 @@ export default [
     about: 'Our naturally fermented raw vinegar is made using a base of freshly juiced apples, which we ferment into cider, and in turn into vinegar. Rosehips are foraged locally in season, adding medicinal benefits along with a delicate fruity flavour. They are high in vitamin C. Our vinegar can be taken daily, used in cooking and to make salad dressings.',
     ingredients: ['Apples - 4 Hands Farm, foraged locally', 'Rosehips - Foraged locally'],
     size: '500ml',
-    price: '€7.00',
+    price: 7.00,
     image: ''
 },
 ]
